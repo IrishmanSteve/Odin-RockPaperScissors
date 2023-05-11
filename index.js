@@ -43,6 +43,7 @@ function game () {
         const playerSelection = getPlayerChoice();
         const computerSelection = getComputerChoice(); 
         const result = playRound(playerSelection, computerSelection);
+        
         console.log(result);
 
         if (result.startsWith("You Win")) {
@@ -51,10 +52,12 @@ function game () {
             computerScore++;
         }
     }
+    
     console.clear();
     console.log("Final Score:");
     console.log("Player:", playerScore);
     console.log("Computer", computerScore);
+    
     if (playerScore > computerScore) {
         console.log("You win! Congrats!");
     } else if (computerScore > playerScore) {
