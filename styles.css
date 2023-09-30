@@ -1,0 +1,91 @@
+html {
+    background-image: url(rps_background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+body {
+    text-align: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 22px;
+    max-width: 55%;
+    margin: 0 auto;
+    padding: 10px;
+    color: black;
+}
+
+div {
+    padding: 40px 10px;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.scoreContainer {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 10px;
+}
+
+.scores {
+    border: 20px;
+}
+
+button {
+    width: 100px;
+    height: 100px;
+    border-radius: 40px;
+    border: 4px solid black;
+}
+
+button:hover {
+    transform: scale(1.3);
+    border: 5px solid yellow;
+}
+
+#rock:hover {
+    border: 5px solid red;
+}
+
+#paper:hover {
+    border: 5px solid green;
+}
+
+#scissors:hover {
+    border: 5px solid blue;
+}
+
+#reset {
+    display: none;
+}
+
+#context {
+    white-space: pre-line;
+}
+
+.fa-solid {
+    font-size: 35px;
+    color: coral;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: blanchedalmond;
+    opacity: 90%;
+    font-style: italic;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-style: normal;
+}
